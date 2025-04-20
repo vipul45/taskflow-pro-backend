@@ -7,7 +7,8 @@ import { UsersModule } from './modules/users/users.module';
 import { UsersController } from './modules/users/users.controller';
 import { UsersService } from './modules/users/users.service';
 import { AuthModule } from './modules/auth/auth.module';
-import { AuthController } from './modules/auth.controller';
+import { AuthController } from './modules/auth/auth.controller';
+import { TeamsModule } from './modules/teams/teams.module';
 
 @Module({
   imports: [
@@ -31,9 +32,10 @@ import { AuthController } from './modules/auth.controller';
       })
     }),
     UsersModule,
-    AuthModule
+    AuthModule,
+    TeamsModule
   ],
-  controllers: [AppController, UsersController, AuthController],
-  providers: [AppService, UsersService],
+  controllers: [AppController, AuthController],
+  providers: [AppService],
 })
 export class AppModule { }
