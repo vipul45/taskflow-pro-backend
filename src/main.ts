@@ -1,5 +1,5 @@
 // src/main.ts
-import './init-db'; 
+// import './init-db'; 
 import { NestFactory, Reflector } from '@nestjs/core'; // Import Reflector
 import { AppModule } from './app.module';
 import { ValidationPipe, ClassSerializerInterceptor } from '@nestjs/common'; // Import pipes/interceptors

@@ -1,0 +1,15 @@
+# .dockerignore
+.git
+.gitignore
+.dockerignore
+node_modules
+dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test
+*.md
+.env
+.env.*
+!/.env.example
+# Add any other local config or large files not needed in the image
